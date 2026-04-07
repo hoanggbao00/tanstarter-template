@@ -11,8 +11,9 @@ export default defineConfig({
     tabWidth: 2,
     useTabs: false,
     semi: true,
+    ignorePatterns: ['**/_generated/**'],
   },
-  lint: { options: { typeAware: true, typeCheck: true } },
+  lint: { options: { typeAware: true, typeCheck: true }, ignorePatterns: ['**/_generated/**'] },
   run: {
     cache: true,
   },

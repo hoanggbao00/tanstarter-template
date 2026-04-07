@@ -2,6 +2,12 @@
   "name": "@repo/convex",
   "version": "0.0.0",
   "private": true,
+  "exports": {
+    "_generated/*": {
+      "types": "./convex/_generated/*.d.ts",
+      "default": "./convex/_generated/*.js"
+    }
+  },
   "scripts": {
     "dev": "convex dev",
     "predev": "convex dev --until-success && convex dashboard",

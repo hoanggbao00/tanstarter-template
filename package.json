@@ -1,5 +1,5 @@
 {
-  "name": "tanstarter-vite-plus",
+  "name": "danuchi",
   "version": "0.0.0",
   "private": true,
   "keywords": [
@@ -23,13 +23,16 @@
   "type": "module",
   "scripts": {
     "ready": "vp fmt && vp lint && vp run -r test && vp run -r build",
-    "dev": "vp run web#dev",
+    "dev": "turbo run dev --filter=@repo/web --filter=@repo/convex",
+    "dev:web": "vp run web#dev",
+    "dev:convex": "vp run convex#dev",
     "start": "vp run web#start",
     "prepare": "vp config"
   },
   "devDependencies": {
     "@repo/tsconfig": "workspace:*",
-    "@types/bun": "latest",
+    "@types/bun": "1.3.11",
+    "turbo": "^2.9.4",
     "vite-plus": "catalog:"
   },
   "peerDependencies": {
