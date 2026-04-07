@@ -1,10 +1,22 @@
 {
+  "files.watcherExclude": {
+    "**/routeTree.gen.ts": true
+  },
+  "files.readonlyExclude": {
+    "**/routeTree.gen.ts": true
+  },
   "biome.enabled": false,
   "editor.defaultFormatter": "oxc.oxc-vscode",
+  "oxc.enable.oxfmt": true,
+  "oxc.enable.oxlint": true,
+  "oxc.configPath": "./vite.config.ts",
   "editor.formatOnSave": false,
   "editor.formatOnSaveMode": "file",
   "editor.codeActionsOnSave": {
     "source.format.oxc": "always", // run formatter first
     "source.fixAll.oxc": "always" // run lint fixes after
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
   }
 }
