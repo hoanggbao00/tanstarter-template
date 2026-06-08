@@ -1,5 +1,4 @@
 import { GooeyToaster, GooeyToasterProps, gooeyToast } from 'goey-toast';
-import { IconCircleCheck, IconInfoCircle, IconAlertTriangle, IconAlertOctagon, IconLoader } from '@tabler/icons-react';
 import { useTheme } from '../lib/theme-provider';
 
 export { gooeyToast as toast };
