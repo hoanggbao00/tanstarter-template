@@ -4,6 +4,8 @@
   "private": true,
   "exports": {
     "./index.css": "./src/index.css",
-    "./variables.css": "./src/variables.css"
+    "./variables.css": "./src/variables.css",
+    "./utilities.css": "./src/utilities.css",
+    "./scroll-mask.css": "./src/scroll-mask.css"
   }
 }
