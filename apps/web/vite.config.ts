@@ -1,10 +1,9 @@
 import { defineConfig } from 'vite-plus';
 import { devtools } from '@tanstack/devtools-vite';
 import { tanstackStart } from '@tanstack/react-start/plugin/vite';
-import react, { reactCompilerPreset } from '@vitejs/plugin-react';
+import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 import { nitro } from 'nitro/vite';
-import babel from '@rolldown/plugin-babel';
 import AutoImport from 'unplugin-auto-import/vite';
 
 const config = defineConfig(({ command }) => ({
@@ -12,14 +11,11 @@ const config = defineConfig(({ command }) => ({
     tsconfigPaths: true,
   },
   plugins: [
-    babel({
-      presets: [reactCompilerPreset()],
-    }),
     ...(command === 'serve' ? [devtools()] : []),
     nitro(),
     tailwindcss(),
     tanstackStart(),
-    react(),
+    react({ compiler: true }),
     AutoImport({
       imports: [
         'react',

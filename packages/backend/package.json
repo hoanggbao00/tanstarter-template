@@ -15,7 +15,7 @@
     "typecheck": "tsc --noEmit -p convex"
   },
   "dependencies": {
-    "convex": "^1.39.1"
+    "convex": "catalog:"
   },
   "devDependencies": {
     "typescript": "catalog:"

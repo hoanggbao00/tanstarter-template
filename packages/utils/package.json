@@ -8,7 +8,7 @@
     "./cn": "./src/cn.ts"
   },
   "dependencies": {
-    "clsx": "2.1.1",
-    "tailwind-merge": "3.6.0"
+    "clsx": "catalog:",
+    "tailwind-merge": "catalog:"
   }
 }

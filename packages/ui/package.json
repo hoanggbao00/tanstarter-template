@@ -16,15 +16,15 @@
     "@repo/styles": "workspace:*",
     "@repo/utils": "workspace:*",
     "@tabler/icons-react": "catalog:",
-    "framer-motion": "^12.40.0",
-    "goey-toast": "^0.4.0"
+    "framer-motion": "catalog:",
+    "goey-toast": "catalog:"
   },
   "devDependencies": {
     "@base-ui/react": "catalog:",
     "@repo/tsconfig": "workspace:*",
     "@types/react": "catalog:",
     "@types/react-dom": "catalog:",
-    "class-variance-authority": "0.7.1",
+    "class-variance-authority": "catalog:",
     "shadcn": "catalog:",
     "tailwindcss": "catalog:",
     "tw-animate-css": "catalog:",
